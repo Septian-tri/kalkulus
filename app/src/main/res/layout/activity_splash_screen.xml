@@ -5,22 +5,16 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:padding="10dp"
         tools:context=".SplashScreen">
 
-    <FrameLayout
-            android:orientation="horizontal"
-            android:padding="15dp"
-            android:layout_gravity="center|top"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-        <ImageView
-            android:layout_gravity="center|end"
-            android:id="@+id/universityLogo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-
-    </FrameLayout>
+    `<ImageView
+        android:minWidth="180dp"
+        android:minHeight="48dp"
+        android:layout_gravity="top|start"
+        android:id="@+id/universityLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
     <LinearLayout
         android:layout_gravity="center_horizontal|center_vertical"
@@ -44,7 +38,6 @@
 
     <FrameLayout
         android:orientation="horizontal"
-        android:padding="15dp"
         android:layout_gravity="center|bottom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">

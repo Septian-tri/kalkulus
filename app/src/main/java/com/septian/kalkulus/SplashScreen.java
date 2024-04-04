@@ -13,6 +13,6 @@ public class SplashScreen extends AppCompatActivity {
         setContentView(R.layout.activity_splash_screen);
 
         ImageSetterFromStream imageSetterFromStream = new ImageSetterFromStream(this);
-        imageSetterFromStream.setAsImageDrawable("undiraLogo.png", R.id.universityLogo);
+        imageSetterFromStream.setAsImageDrawable("logoUndira.png", R.id.universityLogo);
     }
 }
