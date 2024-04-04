@@ -53,6 +53,7 @@
             android:layout_height="wrap_content"/>
 
         <TextView
+            android:id="@+id/openPopUpCredits"
             android:textSize="16sp"
             android:textColor="#065EA5"
             android:layout_gravity="center|end"
@@ -61,4 +62,47 @@
             android:layout_height="wrap_content"/>
 
     </FrameLayout>
+
+    <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/creditsPopUpWrapper"
+            android:background="@drawable/bg_transparent_black_round"
+            android:layout_gravity="bottom|center"
+            android:padding="12dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="@string/greeting_credits"
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/closeButtonCredit"
+                android:layout_gravity="center|end"
+                android:background="@drawable/baseline_close_24"
+                android:layout_width="35dp"
+                android:layout_height="35dp"/>
+
+        </FrameLayout>
+
+        <TextView
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:text="@string/credits_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
 </FrameLayout>
