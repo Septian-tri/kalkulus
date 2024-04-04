@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Undira Simple Kalkulus</string>
+    <string name="greeting_text">Kalkulator Kalkulus</string>
+    <string name="greeting_version">V1.0</string>
+    <string name="greeting_button">OK, Lanjut</string>
+    <string name="greeting_credits"><u>Credits</u></string>
+</resources>
