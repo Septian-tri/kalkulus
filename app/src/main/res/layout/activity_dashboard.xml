@@ -15,17 +15,136 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:textSize="16sp"
+            android:text="@string/title_inequality"
+            android:id="@+id/markEquation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/shutdownApps"
             android:layout_gravity="center|end"
             android:background="@drawable/baseline_power_settings_24"
             android:layout_width="25dp"
             android:layout_height="25dp"/>
+
     </FrameLayout>
 
-    <EditText
-        android:textSize="14dp"
-        android:hint="@string/hint_formula"
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="2.5dp"
+                android:layout_gravity="center_vertical"
+                android:textSize="11sp"
+                android:text="@string/field_title"
+                android:id="@+id/oneVariable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/coefficientA"
+                    android:hint="@string/hint_a"
+                    style="@style/coefficient_field"/>
+
+                <EditText
+                    style="@style/coefficient_field"
+                    android:id="@+id/coefficientB"
+                    android:hint="@string/hint_b"/>
+
+                <EditText
+                    android:hint="@string/hint_c"
+                    style="@style/coefficient_field"
+                    android:id="@+id/coefficientC"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/solveBtn"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="30dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:text="@string/solve_button"
+            android:background="@drawable/solution_background"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="11sp"
+                android:text="@string/solution_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/fullQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        
+        <ScrollView
+            android:background="@drawable/solution_background"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:padding="10dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:id="@+id/solutionTv"
+                    android:layout_width="match_parent"
+                    android:minHeight="120dp"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
 
 </LinearLayout>
