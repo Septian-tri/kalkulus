@@ -44,6 +44,7 @@
 
         <androidx.appcompat.widget.AppCompatButton
             android:padding="10dp"
+            android:id="@+id/dashboardCalculator"
             android:background="@drawable/white_orange_bg"
             android:textColor="@color/white"
             android:layout_gravity="start|center"

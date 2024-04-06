@@ -1,5 +1,6 @@
 package com.septian.kalkulus;
 
+import android.content.Intent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
@@ -15,8 +16,10 @@ public class SplashScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
         TextView creditTvClickable = findViewById(R.id.openPopUpCredits);
+        Button nextScreen = findViewById(R.id.dashboardCalculator);
         ImageSetterFromStream imageSetterFromStream = new ImageSetterFromStream(this);
 
+        imageSetterFromStream.setAsImageDrawable("logoUndira.png", R.id.universityLogo);
         creditTvClickable.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -35,6 +38,13 @@ public class SplashScreen extends AppCompatActivity {
                 creditTvClickable.setVisibility(View.GONE);
             }
         });
-        imageSetterFromStream.setAsImageDrawable("logoUndira.png", R.id.universityLogo);
+        nextScreen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent calculatorScreenIntent = new Intent(SplashScreen.this, DashboardActivity.class);
+                startActivity(calculatorScreenIntent);
+                finish();
+            }
+        });
     }
 }

@@ -3,6 +3,11 @@
     <string name="greeting_text">Kalkulator Kalkulus</string>
     <string name="greeting_version">V1.0</string>
     <string name="greeting_button">OK, Lanjut</string>
-    <string name="greeting_credits"><u>Credits</u></string>
-    <string name="credits_details">Nama\t: Septian Triwidianto Putra\nMata Kuliah\t: Kalkulus\nDosen Pengampu\t: Ibu Masnia.Spd\nNIM\t: 411232039</string>
+    <string name="greeting_credits">
+        <u>Credits</u>
+    </string>
+    <string name="credits_details">Nama\t: Septian Triwidianto Putra\nMata Kuliah\t: Kalkulus\nDosen Pengampu\t: Ibu
+        Masnia.Spd\nNIM\t: 411232039
+    </string>
+    <string name="hint_formula">Masukan Nilai Disini</string>
 </resources>
