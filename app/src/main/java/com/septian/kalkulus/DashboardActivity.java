@@ -52,7 +52,7 @@ public class DashboardActivity extends AppCompatActivity {
                 if(coeA.equals("") || coeB.equals("") || coeC.equals("")){
                     Toast.makeText(
                         DashboardActivity.this,
-                        getString(R.string.invalid_field),
+                        R.string.invalid_field,
                         Toast.LENGTH_LONG
                     ).show();
                 }else{
@@ -62,6 +62,15 @@ public class DashboardActivity extends AppCompatActivity {
                     int valCoefficientB = Integer.parseInt(coeB);
                     int valCoefficientC = Integer.parseInt(coeC);
                     double discriminant = valCoefficientB * valCoefficientB - 4 * valCoefficientA * valCoefficientC;
+
+                    if(valCoefficientA == 0){
+                        Toast.makeText(
+                            DashboardActivity.this,
+                            R.string.coe_zero,
+                            Toast.LENGTH_LONG
+                        ).show();
+                        return;
+                    }
 
                     stepsLog += getString(R.string.steps_1_log);
                     stepsLog += valCoefficientA + getString(R.string.xsqrt2_title) + " + " + valCoefficientB + "x + " + valCoefficientC + " > 0\n\n";
@@ -126,6 +135,6 @@ public class DashboardActivity extends AppCompatActivity {
     }
 
     private String decimal2Digits(double val){
-        return String.format("%.1f", val);
+        return String.format("%.1f", val).replace(",", ".");
     }
 }

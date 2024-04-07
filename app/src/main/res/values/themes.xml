@@ -1,7 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <style name="DefaultTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="DefaultTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="android:windowFullscreen">true</item>
-        <item name="colorPrimary">@color/white</item>
     </style>
     <style name="coefficient_field">
         <item name="android:inputType">numberSigned</item>

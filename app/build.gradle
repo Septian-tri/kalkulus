@@ -3,6 +3,14 @@ plugins {
 }
 
 android {
+    signingConfigs {
+        release {
+            storeFile file('D:\\sept_keystroke.jks')
+            keyAlias 'sept_android_keystroke'
+            storePassword 'Se27..'
+            keyPassword 'Se27..'
+        }
+    }
     namespace 'com.septian.kalkulus'
     compileSdk 33
 

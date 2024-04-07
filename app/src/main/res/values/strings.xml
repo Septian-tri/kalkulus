@@ -1,13 +1,16 @@
 <resources>
-    <string name="app_name">Undira Simple Kalkulus</string>
+    <string name="app_name">Simpel Kalkulus Kalkulator</string>
     <string name="greeting_text">Kalkulator Kalkulus</string>
     <string name="greeting_version">V1.0</string>
     <string name="greeting_button">OK, Lanjut</string>
     <string name="greeting_credits">
         <u>Credits</u>
     </string>
-    <string name="credits_details">Nama\t: Septian Triwidianto Putra\nMata Kuliah\t: Kalkulus\nDosen Pengampu\t: Ibu
-        Masnia.Spd\nNIM\t: 411232039
+    <string name="credits_details">
+        Nama\t\t: Septian Triwidianto Putra\n
+        Mata Kuliah\t\t: Kalkulus\n
+        Dosen Pengampu\t\t: Ibu Masnia M.PD\n
+        NIM\t\t: 411232039
     </string>
     <string name="field_title">Silahkan Masukan Nilai Koefisien Pada Field A, B dan C</string>
     <string name="hint_a">A</string>
@@ -42,4 +45,5 @@
     <string name="positive_inequality_around_quadratic">Pertidaksamaan positif di sekitar akar </string>
     <string name="negative_discriminant_ho_have_quadratic">Diskriminan negatif, tidak memiliki akar real.\n\n</string>
     <string name="no_solution_solve">Tidak ada akar real, pertidaksamaan tidak memiliki solusi.\n</string>
+    <string name="coe_zero">Koefisien A Tidak Dapat NOL</string>
 </resources>
