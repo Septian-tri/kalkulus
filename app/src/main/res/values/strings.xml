@@ -7,10 +7,7 @@
         <u>Credits</u>
     </string>
     <string name="credits_details">
-        Nama\t\t: Septian Triwidianto Putra\n
-        Mata Kuliah\t\t: Kalkulus\n
-        Dosen Pengampu\t\t: Ibu Masnia M.PD\n
-        NIM\t\t: 411232039
+        Mata Kuliah\u0009\u0009\u0009\u0009\u0009\u0009: Kalkulus\nDosen Pengampu\u0009\u0009: Ibu Masnia M.PD\nNama\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009: Septian Triwidianto P.\nNIM\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009: 411232039
     </string>
     <string name="field_title">Silahkan Masukan Nilai Koefisien Pada Field A, B dan C</string>
     <string name="hint_a">A</string>
