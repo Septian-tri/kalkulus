@@ -6,13 +6,20 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="10dp"
         tools:context=".SplashScreen">
 
+    <ImageView
+        android:scaleType="fitXY"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:id="@+id/splashBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
     `<ImageView
+        android:layout_margin="10dp"
         android:minWidth="180dp"
         android:minHeight="48dp"
-        android:layout_gravity="top|start"
+        android:layout_gravity="top|end"
         android:id="@+id/universityLogo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
@@ -42,6 +49,7 @@
     </LinearLayout>
 
     <FrameLayout
+        android:layout_margin="10dp"
         android:orientation="horizontal"
         android:layout_gravity="center|bottom"
         android:layout_width="match_parent"
@@ -50,7 +58,7 @@
         <androidx.appcompat.widget.AppCompatButton
             android:padding="10dp"
             android:id="@+id/dashboardCalculator"
-            android:background="@drawable/white_orange_bg"
+            android:background="@drawable/white_violet_bg"
             android:textColor="@color/white"
             android:layout_gravity="start|center"
             android:text="@string/greeting_button"
@@ -58,12 +66,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatButton
+            android:padding="10dp"
             android:id="@+id/openPopUpCredits"
-            android:textSize="16sp"
-            android:textColor="#065EA5"
-            android:layout_gravity="center|end"
+            android:background="@drawable/white_pink_bg"
+            android:textColor="@color/white"
+            android:layout_gravity="end|center"
             android:text="@string/greeting_credits"
+            android:textSize="16sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
@@ -71,6 +81,7 @@
 
     <LinearLayout
             android:visibility="gone"
+            android:layout_margin="10dp"
             android:id="@+id/creditsPopUpWrapper"
             android:background="@drawable/bg_transparent_black_round"
             android:layout_gravity="bottom|center"
@@ -102,12 +113,47 @@
 
         </FrameLayout>
 
-        <TextView
-            android:textSize="15sp"
-            android:textColor="@color/white"
-            android:text="@string/credits_details"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow>
+                <TextView
+                    style="@style/creditsTableText"
+                    android:text="@string/credit_name"/>
+                <TextView
+                    style="@style/creditsTableText"
+                    android:text="@string/credit_val_name"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    style="@style/creditsTableText"
+                    android:text="@string/credit_nim"/>
+                <TextView
+                    style="@style/creditsTableText"
+                    android:text="@string/credit_val_nim"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                        style="@style/creditsTableText"
+                        android:text="@string/credit_subject"/>
+                <TextView
+                        style="@style/creditsTableText"
+                        android:text="@string/credit_val_subject"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                        style="@style/creditsTableText"
+                        android:text="@string/credit_teacher"/>
+                <TextView
+                        style="@style/creditsTableText"
+                        android:text="@string/credit_val_teacher"/>
+            </TableRow>
+
+        </TableLayout>
 
     </LinearLayout>
 

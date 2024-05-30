@@ -20,6 +20,8 @@ public class SplashScreen extends AppCompatActivity {
         ImageSetterFromStream imageSetterFromStream = new ImageSetterFromStream(this);
 
         imageSetterFromStream.setAsImageDrawable("logoUndira.png", R.id.universityLogo);
+        imageSetterFromStream.setAsImageDrawable("background.png", R.id.splashBackground);
+
         creditTvClickable.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -29,11 +31,13 @@ public class SplashScreen extends AppCompatActivity {
                 closePopUpBtn.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
+                        nextScreen.setVisibility(View.VISIBLE);
                         popUpCredits.setVisibility(View.GONE);
                         creditTvClickable.setVisibility(View.VISIBLE);
                     }
                 });
 
+                nextScreen.setVisibility(View.GONE);
                 popUpCredits.setVisibility(View.VISIBLE);
                 creditTvClickable.setVisibility(View.GONE);
             }

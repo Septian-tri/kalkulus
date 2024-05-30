@@ -10,6 +10,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import com.septian.kalkulus.helper.ImageSetterFromStream;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;
@@ -21,11 +22,14 @@ public class DashboardActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
 
+        ImageSetterFromStream setterFromStream = new ImageSetterFromStream(this);
         Button solveBtn = findViewById(R.id.solveBtn);
         Button shutdownBtn = findViewById(R.id.shutdownApps);
         EditText coefficientA = findViewById(R.id.coefficientA);
         EditText coefficientB = findViewById(R.id.coefficientB);
         EditText coefficientC = findViewById(R.id.coefficientC);
+
+        setterFromStream.setAsImageDrawable("background_dashboard.png", R.id.dashboardBackground);
 
         solveBtn.setOnClickListener(new View.OnClickListener() {
             @Override

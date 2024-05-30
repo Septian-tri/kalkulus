@@ -3,26 +3,29 @@
     <string name="greeting_text">Kalkulator Kalkulus</string>
     <string name="greeting_version">V1.0</string>
     <string name="greeting_button">OK, Lanjut</string>
-    <string name="greeting_credits">
-        <u>Credits</u>
-    </string>
-    <string name="credits_details">
-        Mata Kuliah\u0009\u0009\u0009\u0009\u0009\u0009: Kalkulus\nDosen Pengampu\u0009\u0009: Ibu Masnia M.PD\nNama\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009: Septian Triwidianto P.\nNIM\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009: 411232039
-    </string>
+    <string name="greeting_credits">Credits</string>
+    <string name="credit_name">Nama</string>
+    <string name="credit_nim">NIM</string>
+    <string name="credit_teacher">Dosen Pengampu</string>
+    <string name="credit_subject">Mata Kuliah</string>
+    <string name="credit_val_name">Clarissa Yesha Claudiya</string>
+    <string name="credit_val_nim">411232036</string>
+    <string name="credit_val_teacher">Ibu Masnia M.PD</string>
+    <string name="credit_val_subject">Kalkulus</string>
     <string name="field_title">Silahkan Masukan Nilai Koefisien Pada Field A, B dan C</string>
     <string name="hint_a">A</string>
     <string name="hint_b">B</string>
     <string name="hint_c">C</string>
     <string name="mark_equation_0">= 0</string>
     <string name="mark_equation_not_0">≠ 0</string>
-    <string name="title_inequality">Pertidaksamaan Akar Kuadrat</string>
+    <string name="title_inequality">Persamaan Akar Kuadrat</string>
     <string name="inequality_1v">Satu</string>
     <string name="inequality_2v">Dua</string>
     <string name="variable">Variable</string>
-    <string name="solution_title">Langkah-langkah Penyelesaian Pertidaksamaan Kuadrat</string>
+    <string name="solution_title">Langkah-langkah Penyelesaian Persamaan Kuadrat</string>
     <string name="solve_button">Penyelesaian</string>
     <string name="invalid_field">Masukan Seluruh Koefisien A, B dan C</string>
-    <string name="introduction_solver">Langkah-langkah Penyelesaian Pertidaksamaan Kuadrat\n</string>
+    <string name="introduction_solver">Langkah-langkah Penyelesaian Persamaan Kuadrat\n</string>
     <string name="steps_1_log">Langkah 1 :\nPersamaan Kuadrat:  </string>
     <string name="steps_2_log">Langkah 2 :\n</string>
     <string name="steps_3_log">Langkah 3 :\nAnalisis Tanda Diskriminan :\n</string>
@@ -35,12 +38,12 @@
     <string name="discriminant_positive">Diskriminan positif, memiliki dua akar real.\n\n</string>
     <string name="find_2square">Mencari Persamaan Akar 1 (x1) dan Akar 2 (x2) :\n</string>
     <string name="calc_discriminant">Menghitung Diskriminan (D):\n</string>
-    <string name="determine_interval_inequality">Menentukan Interval-Interval yang Memenuhi Pertidaksamaan : Pertidaksamaan positif di antara x1 dan x2.\n\n</string>
+    <string name="determine_interval_inequality">Menentukan Interval-Interval yang Memenuhi Persamaan : Persamaan positif di antara x1 dan x2.\n\n</string>
     <string name="zero_discriminant">Diskriminan nol, memiliki satu akar real.\n\n</string>
     <string name="find_quadratic_equation">Mencari Akar Persamaan:\n</string>
-    <string name="determine_fulfill_inequality_interval">Menentukan Interval yang Memenuhi Pertidaksamaan:\n</string>
-    <string name="positive_inequality_around_quadratic">Pertidaksamaan positif di sekitar akar </string>
+    <string name="determine_fulfill_inequality_interval">Menentukan Interval yang Memenuhi Persamaan:\n</string>
+    <string name="positive_inequality_around_quadratic">Persamaan positif di sekitar akar </string>
     <string name="negative_discriminant_ho_have_quadratic">Diskriminan negatif, tidak memiliki akar real.\n\n</string>
-    <string name="no_solution_solve">Tidak ada akar real, pertidaksamaan tidak memiliki solusi.\n</string>
+    <string name="no_solution_solve">Tidak ada akar real, Persamaan tidak memiliki solusi.\n</string>
     <string name="coe_zero">Koefisien A Tidak Dapat NOL</string>
 </resources>
