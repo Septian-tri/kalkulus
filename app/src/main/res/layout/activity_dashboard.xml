@@ -64,8 +64,11 @@
                         android:textSize="11sp"
                         android:text="@string/field_title"
                         android:id="@+id/oneVariable"
-                        android:layout_width="wrap_content"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"/>
+
+                <Space android:layout_width="match_parent" android:layout_height="15dp"/>
 
                 <LinearLayout
                         android:orientation="horizontal"
@@ -73,43 +76,140 @@
                         android:layout_height="wrap_content">
 
                     <EditText
-                            android:id="@+id/coefficientA"
-                            android:hint="@string/hint_a"
-                            style="@style/coefficient_field"/>
+                        android:id="@+id/coefficientA"
+                        android:hint="@string/hint_a"
+                        style="@style/coefficient_field"/>
 
                     <EditText
-                            style="@style/coefficient_field"
-                            android:id="@+id/coefficientB"
-                            android:hint="@string/hint_b"/>
+                        style="@style/coefficient_field"
+                        android:id="@+id/coefficientB"
+                        android:hint="@string/hint_b"/>
 
                     <EditText
-                            android:hint="@string/hint_c"
-                            style="@style/coefficient_field"
-                            android:id="@+id/coefficientC"/>
+                        android:hint="@string/hint_c"
+                        style="@style/coefficient_field"
+                        android:id="@+id/coefficientC"/>
 
                 </LinearLayout>
 
             </LinearLayout>
 
-            <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/solveBtn"
+            <FrameLayout
                     android:layout_gravity="center_vertical"
-                    android:layout_marginStart="30dp"
-                    android:paddingTop="10dp"
-                    android:paddingBottom="10dp"
-                    android:paddingEnd="10dp"
-                    android:paddingStart="10dp"
-                    android:text="@string/solve_button"
-                    android:background="@drawable/solution_background"
-                    android:textColor="@color/white"
-                    android:textSize="13sp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="35dp"/>
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:minHeight="50dp"
+                    android:layout_height="match_parent">
+
+                <TextView
+                        android:gravity="center"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="2.5dp"
+                        android:layout_gravity="top"
+                        android:textSize="11sp"
+                        android:text="@string/inequality_sign"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                <RadioGroup
+                        android:id="@+id/signGroup"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:text="@string/grater_than_sign"
+                            style="@style/signLabel"/>
+
+                        <RadioButton
+                            android:layout_gravity="center_horizontal"
+                            android:id="@+id/signGreaterThan"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        <TextView
+                                android:text="@string/less_than_sign"
+                                style="@style/signLabel"/>
+
+                        <RadioButton
+                                android:layout_gravity="center_horizontal"
+                                android:id="@+id/lessGreaterThan"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        <TextView
+                                android:text="@string/grater_than_equal_sign"
+                                style="@style/signLabel"/>
+
+                        <RadioButton
+                                android:layout_gravity="center_horizontal"
+                                android:id="@+id/signGreaterThanEqual"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        <TextView
+                                style="@style/signLabel"
+                                android:text="@string/less_than_equal_sign"/>
+
+                        <RadioButton
+                                android:layout_gravity="center_horizontal"
+                                android:id="@+id/signLessThanEqual"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"/>
+
+                    </LinearLayout>
+
+                </RadioGroup>
+
+            </FrameLayout>
 
         </LinearLayout>
 
+        <Space android:layout_width="match_parent" android:layout_height="30dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/solveBtn"
+            android:layout_gravity="center_horizontal"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:text="@string/solve_button"
+            android:background="@drawable/solution_background"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"/>
+
+        <Space android:layout_width="match_parent" android:layout_height="30dp"/>
+
         <LinearLayout
-                android:layout_marginTop="20dp"
                 android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -145,6 +245,7 @@
                         android:layout_height="wrap_content">
 
                     <TextView
+                            android:textIsSelectable="true"
                             android:padding="10dp"
                             android:textSize="14sp"
                             android:textColor="@color/white"
@@ -156,6 +257,14 @@
                 </LinearLayout>
 
             </ScrollView>
+
+            <Space android:layout_width="match_parent" android:layout_height="30dp"/>
+
+            <FrameLayout
+                android:id="@+id/graphContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp" />
 
         </LinearLayout>
     </LinearLayout>
