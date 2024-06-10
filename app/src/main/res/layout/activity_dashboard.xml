@@ -7,6 +7,7 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         tools:context=".DashboardActivity">
 
+<<<<<<< HEAD
     <ImageView
             android:scaleType="fitXY"
             android:layout_gravity="center_vertical|center_horizontal"
@@ -159,6 +160,26 @@
 
         </LinearLayout>
     </LinearLayout>
+=======
+    <FrameLayout
+        android:layout_gravity="end|top"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_gravity="center|end"
+            android:background="@drawable/baseline_power_settings_24"
+            android:layout_width="25dp"
+            android:layout_height="25dp"/>
+    </FrameLayout>
+
+    <EditText
+        android:textSize="14dp"
+        android:hint="@string/hint_formula"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+>>>>>>> parent of d294ba8 ([FEATURE] added new dashboard)
 
 </FrameLayout>
 

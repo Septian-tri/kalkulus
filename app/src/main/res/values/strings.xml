@@ -3,6 +3,7 @@
     <string name="greeting_text">Kalkulator Kalkulus</string>
     <string name="greeting_version">V1.0</string>
     <string name="greeting_button">OK, Lanjut</string>
+<<<<<<< HEAD
     <string name="greeting_credits">Credits</string>
     <string name="credit_name">Nama</string>
     <string name="credit_nim">NIM</string>
@@ -46,4 +47,13 @@
     <string name="negative_discriminant_ho_have_quadratic">Diskriminan negatif, tidak memiliki akar real.\n\n</string>
     <string name="no_solution_solve">Tidak ada akar real, Persamaan tidak memiliki solusi.\n</string>
     <string name="coe_zero">Koefisien A Tidak Dapat NOL</string>
+=======
+    <string name="greeting_credits">
+        <u>Credits</u>
+    </string>
+    <string name="credits_details">Nama\t: Septian Triwidianto Putra\nMata Kuliah\t: Kalkulus\nDosen Pengampu\t: Ibu
+        Masnia.Spd\nNIM\t: 411232039
+    </string>
+    <string name="hint_formula">Masukan Nilai Disini</string>
+>>>>>>> parent of d294ba8 ([FEATURE] added new dashboard)
 </resources>

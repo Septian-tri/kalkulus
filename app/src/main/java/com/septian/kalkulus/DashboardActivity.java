@@ -1,19 +1,8 @@
 package com.septian.kalkulus;
 
-import android.app.Activity;
-import android.inputmethodservice.Keyboard;
-import android.view.View;
-import android.view.inputmethod.InputMethodManager;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
-import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import com.septian.kalkulus.helper.ImageSetterFromStream;
-
-import java.lang.reflect.Array;
-import java.util.Arrays;
 
 public class DashboardActivity extends AppCompatActivity {
 
@@ -21,6 +10,7 @@ public class DashboardActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
+<<<<<<< HEAD
 
         ImageSetterFromStream setterFromStream = new ImageSetterFromStream(this);
         Button solveBtn = findViewById(R.id.solveBtn);
@@ -140,5 +130,7 @@ public class DashboardActivity extends AppCompatActivity {
 
     private String decimal2Digits(double val){
         return String.format("%.1f", val).replace(",", ".");
+=======
+>>>>>>> parent of d294ba8 ([FEATURE] added new dashboard)
     }
 }
