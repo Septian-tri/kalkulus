@@ -8,8 +8,8 @@
     <string name="credit_nim">NIM</string>
     <string name="credit_teacher">Dosen Pengampu</string>
     <string name="credit_subject">Mata Kuliah</string>
-    <string name="credit_val_name">Clarissa Yesha Claudiya</string>
-    <string name="credit_val_nim">411232036</string>
+    <string name="credit_val_name"></string>
+    <string name="credit_val_nim"></string>
     <string name="credit_val_teacher">Ibu Masnia M.PD</string>
     <string name="credit_val_subject">Kalkulus</string>
     <string name="field_title">Masukan Nilai Koefisien A, B dan Konstanta C</string>
